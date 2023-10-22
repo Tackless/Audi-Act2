@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUDI | Pilas</title>
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    <header class="py-4">
+        <h1 class="text-center">Abstracción y <span class="text-primary">Uso de Datos</span></h1>
+    </header>
+
+    <div class="border-top py-4">
+        <div class="navbar navbar-expand-lg container navbar-light">
+            <div id="navegacion" class="collapse navbar-collapse">
+                <nav class="navbar-nav container d-flex flex-md-row justify-content-md-between text-center">
+                    <a class="text-dark text-decoration-none" href="index.html">Inicio</a>
+                    <a class="text-dark text-decoration-none" href="pilas.html">Pilas</a>
+                    <a class="text-dark text-decoration-none" href="colas.html">Colas</a>
+                    <a class="text-dark text-decoration-none" href="listas.html">Listas</a>
+                    <a class="text-dark text-decoration-none" href="arboles.html">Árboles</a>
+                    <a class="text-dark text-decoration-none" href="grafos.html">Gráfos</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <main class="container-xl py-5">
+        <h2 class="text-center my-5 ">Pilas - Código</h2>
+
+        <pre>
+            <code>
+                package com.mycompany.estructurasdedatos;
+
+                import java.util.*;
+
+                /**
+                *
+                * @author Donovan Eliosa
+                */
+                public class Pilas {
+                    
+                    public static void main(String[] args)
+                    {
+                
+                        // Iniciar la pila
+                        Stack pila = new Stack();
+                
+                        // Agregar elementos a la pila con 
+                        // la función Push 
+                        pila.push("Casa");
+                        pila.push("Mono");
+                        pila.push("Radio");
+                        pila.push("Audifonos");
+                        pila.push("Foco");
+                        
+                        // Mostrar la pila
+                        System.out.println("La pila es: " + pila);
+
+                        // Mostrar el elemento en el tope de la pila con
+                        // la función peek
+                        System.out.println("El tope de la pila es: " + pila.peek());
+                        
+                        // Retirar elementos de la pila con 
+                        // la función pop
+                        System.out.println("Elemento retirado: " + pila.pop());
+                                
+                        for(int i = 0; i < 5; i++){
+                            // Comprobar si la pila esta vacia 
+                            if(!pila.empty()){
+                                System.out.println("Elemento retirado con el for: " + pila.pop());
+                                
+                            } else {
+                                System.out.println("No hay más elementos");
+                                break;
+                            }
+                        }
+                    }
+                }
+
+            </code>
+        </pre>
+
+        <h2 class="text-center my-5 ">Pilas - Video</h2>
+
+        <div class="text-center">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/YKtDkBnGKzo?si=8nTm5SXNeFtjOlvs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>   
+        </div>
+        
+
+    </main>
+
+    
+
+    <footer class="mt-5 pt-5 border-top">
+        
+    </footer>
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
